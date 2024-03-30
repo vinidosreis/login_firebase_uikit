@@ -8,11 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		81F0C13D2BB511050060EB81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F0C13C2BB511050060EB81 /* AppDelegate.swift */; };
-		81F0C1412BB511050060EB81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F0C1402BB511050060EB81 /* ViewController.swift */; };
-		81F0C1462BB511070060EB81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81F0C1452BB511070060EB81 /* Assets.xcassets */; };
+		81F0C1412BB511050060EB81 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F0C1402BB511050060EB81 /* AuthViewController.swift */; };
 		81F0C1542BB511070060EB81 /* LoginProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F0C1532BB511070060EB81 /* LoginProjectTests.swift */; };
 		81F0C15E2BB511070060EB81 /* LoginProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F0C15D2BB511070060EB81 /* LoginProjectUITests.swift */; };
 		81F0C1602BB511080060EB81 /* LoginProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F0C15F2BB511080060EB81 /* LoginProjectUITestsLaunchTests.swift */; };
+		81F0C1702BB5EF300060EB81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81F0C1452BB511070060EB81 /* Assets.xcassets */; };
+		81F0C1722BB5F9B30060EB81 /* AuthViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F0C1712BB5F9B30060EB81 /* AuthViewScreen.swift */; };
+		81F0C1752BB60CB80060EB81 /* ViewCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F0C1742BB60CB80060EB81 /* ViewCode.swift */; };
+		81F0C1772BB60FA10060EB81 /* ConfigurableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F0C1762BB60FA10060EB81 /* ConfigurableView.swift */; };
+		81F0C17A2BB688090060EB81 /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F0C1792BB688090060EB81 /* ToggleButton.swift */; };
+		81F0C17D2BB7BF850060EB81 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F0C17C2BB7BF850060EB81 /* HomeViewController.swift */; };
+		81F0C17F2BB7C00A0060EB81 /* HomeViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F0C17E2BB7C00A0060EB81 /* HomeViewScreen.swift */; };
+		81F0C1812BB7E7F10060EB81 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 81F0C1802BB7E7F10060EB81 /* GoogleService-Info.plist */; };
+		81F0C1822BB7E7F10060EB81 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 81F0C1802BB7E7F10060EB81 /* GoogleService-Info.plist */; };
+		81F0C1832BB7E7F10060EB81 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 81F0C1802BB7E7F10060EB81 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +44,7 @@
 /* Begin PBXFileReference section */
 		81F0C1392BB511040060EB81 /* LoginProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81F0C13C2BB511050060EB81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		81F0C1402BB511050060EB81 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		81F0C1402BB511050060EB81 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		81F0C1452BB511070060EB81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81F0C14A2BB511070060EB81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81F0C14F2BB511070060EB81 /* LoginProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,6 +52,13 @@
 		81F0C1592BB511070060EB81 /* LoginProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		81F0C15D2BB511070060EB81 /* LoginProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProjectUITests.swift; sourceTree = "<group>"; };
 		81F0C15F2BB511080060EB81 /* LoginProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		81F0C1712BB5F9B30060EB81 /* AuthViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewScreen.swift; sourceTree = "<group>"; };
+		81F0C1742BB60CB80060EB81 /* ViewCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewCode.swift; path = ../../../ViewCode.swift; sourceTree = "<group>"; };
+		81F0C1762BB60FA10060EB81 /* ConfigurableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableView.swift; sourceTree = "<group>"; };
+		81F0C1792BB688090060EB81 /* ToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleButton.swift; sourceTree = "<group>"; };
+		81F0C17C2BB7BF850060EB81 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		81F0C17E2BB7C00A0060EB81 /* HomeViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewScreen.swift; sourceTree = "<group>"; };
+		81F0C1802BB7E7F10060EB81 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,10 +109,12 @@
 		81F0C13B2BB511040060EB81 /* LoginProject */ = {
 			isa = PBXGroup;
 			children = (
-				81F0C13C2BB511050060EB81 /* AppDelegate.swift */,
-				81F0C1402BB511050060EB81 /* ViewController.swift */,
-				81F0C1452BB511070060EB81 /* Assets.xcassets */,
-				81F0C14A2BB511070060EB81 /* Info.plist */,
+				81F0C1802BB7E7F10060EB81 /* GoogleService-Info.plist */,
+				81F0C1732BB60BFC0060EB81 /* Utilities */,
+				81F0C16F2BB5ECBE0060EB81 /* App */,
+				81F0C16E2BB5EC750060EB81 /* Controllers */,
+				81F0C16D2BB5EC2C0060EB81 /* Views */,
+				81F0C16C2BB5EC240060EB81 /* Models */,
 			);
 			path = LoginProject;
 			sourceTree = "<group>";
@@ -118,6 +136,67 @@
 			path = LoginProjectUITests;
 			sourceTree = "<group>";
 		};
+		81F0C16C2BB5EC240060EB81 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		81F0C16D2BB5EC2C0060EB81 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				81F0C17B2BB7BF620060EB81 /* Home */,
+				81F0C1782BB687BE0060EB81 /* Auth */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		81F0C16E2BB5EC750060EB81 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				81F0C1402BB511050060EB81 /* AuthViewController.swift */,
+				81F0C17C2BB7BF850060EB81 /* HomeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		81F0C16F2BB5ECBE0060EB81 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				81F0C13C2BB511050060EB81 /* AppDelegate.swift */,
+				81F0C1452BB511070060EB81 /* Assets.xcassets */,
+				81F0C14A2BB511070060EB81 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		81F0C1732BB60BFC0060EB81 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				81F0C1742BB60CB80060EB81 /* ViewCode.swift */,
+				81F0C1762BB60FA10060EB81 /* ConfigurableView.swift */,
+				81F0C1792BB688090060EB81 /* ToggleButton.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		81F0C1782BB687BE0060EB81 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				81F0C1712BB5F9B30060EB81 /* AuthViewScreen.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		81F0C17B2BB7BF620060EB81 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				81F0C17E2BB7C00A0060EB81 /* HomeViewScreen.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,6 +213,8 @@
 			dependencies = (
 			);
 			name = LoginProject;
+			packageProductDependencies = (
+			);
 			productName = LoginProject;
 			productReference = 81F0C1392BB511040060EB81 /* LoginProject.app */;
 			productType = "com.apple.product-type.application";
@@ -206,6 +287,8 @@
 				Base,
 			);
 			mainGroup = 81F0C1302BB511040060EB81;
+			packageReferences = (
+			);
 			productRefGroup = 81F0C13A2BB511040060EB81 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -222,7 +305,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81F0C1462BB511070060EB81 /* Assets.xcassets in Resources */,
+				81F0C1702BB5EF300060EB81 /* Assets.xcassets in Resources */,
+				81F0C1812BB7E7F10060EB81 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +314,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81F0C1822BB7E7F10060EB81 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +322,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81F0C1832BB7E7F10060EB81 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,7 +333,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81F0C1412BB511050060EB81 /* ViewController.swift in Sources */,
+				81F0C1772BB60FA10060EB81 /* ConfigurableView.swift in Sources */,
+				81F0C17A2BB688090060EB81 /* ToggleButton.swift in Sources */,
+				81F0C1412BB511050060EB81 /* AuthViewController.swift in Sources */,
+				81F0C17F2BB7C00A0060EB81 /* HomeViewScreen.swift in Sources */,
+				81F0C1752BB60CB80060EB81 /* ViewCode.swift in Sources */,
+				81F0C1722BB5F9B30060EB81 /* AuthViewScreen.swift in Sources */,
+				81F0C17D2BB7BF850060EB81 /* HomeViewController.swift in Sources */,
 				81F0C13D2BB511050060EB81 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,7 +504,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LoginProject/Info.plist;
+				INFOPLIST_FILE = LoginProject/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -422,7 +514,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.LoginProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.LoginProjectVrmb95;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -438,7 +530,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LoginProject/Info.plist;
+				INFOPLIST_FILE = LoginProject/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -448,7 +540,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.LoginProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.LoginProjectVrmb95;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
