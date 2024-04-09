@@ -25,8 +25,24 @@ final class AuthViewController: UIViewController {
 }
 
 extension AuthViewController: AuthViewScreenDelegate {
-    func pushToHomeView() {
-        print("teste")
-        navigationController?.pushViewController(HomeViewController(), animated: true)
+    func tryLogin() {
+        AuthService.shared.signIn(with: SignInRequest(email: "teste123@gmail.com", password: "password123")) { [weak self] error in
+            if let error {
+                self?.showAlert(message: AuthError.signInFailed.localizedDescription)
+            } else {
+                print("logged!")
+                self?.navigationController?.pushViewController(HomeViewController(), animated: true)
+            }
+        }
+    }
+    
+    func tryRegister() {
+        AuthService.shared.signUp(with: SignUpRequest(username: "", email: "", password: "")) { [weak self] result, error in
+            if let error = error {
+                self?.showAlert(message: AuthError.signUpFailed.localizedDescription)
+            }
+            print("athenticated!")
+            self?.navigationController?.pushViewController(HomeViewController(), animated: true)
+        }
     }
 }

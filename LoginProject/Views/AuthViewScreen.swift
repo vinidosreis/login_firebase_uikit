@@ -8,7 +8,8 @@
 import UIKit
 
 protocol AuthViewScreenDelegate: AnyObject {
-    func pushToHomeView()
+    func tryLogin()
+    func tryRegister()
 }
 
 final class AuthViewScreen : UIView {
@@ -59,8 +60,8 @@ final class AuthViewScreen : UIView {
         $0.setTitleColor(.black, for: .normal)
         $0.backgroundColor = .white
         $0.layer.cornerRadius = 10
-        $0.layer.masksToBounds = true // garante que as subcamadas (como sombras) sejam cortadas na forma do botão
-        $0.addTarget(self, action: #selector(authButtonTapped), for: .touchUpInside)
+        $0.addAction(UIAction { [weak self] _ in
+            self?.authButtonTapped() }, for: .primaryActionTriggered)
     }
     
     override init(frame: CGRect) {
@@ -76,8 +77,21 @@ final class AuthViewScreen : UIView {
         applyGradient(colors: [.systemIndigo, .systemBlue, .systemCyan])
     }
     
-    @objc private func authButtonTapped() {
-        delegate?.pushToHomeView()
+    private func authButtonTapped() {
+        authButton.isEnabled = false
+        
+        switch toggleButton.segmentedControl.selectedSegmentIndex {
+        case 0:
+            delegate?.tryLogin()
+        case 1:
+            delegate?.tryRegister()
+        default:
+            break
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) { [weak self] in
+            self?.authButton.isEnabled = true
+        }
     }
 }
 
@@ -89,7 +103,7 @@ extension AuthViewScreen {
         addSubview(nameTextField)
         addSubview(infoLabel)
         addSubview(authButton)
-
+        
         NSLayoutConstraint.activate([
             nameTextField.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 15),
             nameTextField.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 30),
@@ -118,7 +132,7 @@ extension AuthViewScreen {
         authButton.setTitle("Sign In", for: .normal)
         
         addSubview(authButton)
-       
+        
         NSLayoutConstraint.activate([
             authButton.centerXAnchor.constraint(equalTo: centerXAnchor),
             authButton.widthAnchor.constraint(equalToConstant: 160),
@@ -140,12 +154,12 @@ extension AuthViewScreen: ViewCode {
     
     func setupConstraints() {
         NSLayoutConstraint.activate([
-            logoView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 60),
-            logoView.leadingAnchor.constraint(equalTo: leadingAnchor,constant: 95),
-            logoView.trailingAnchor.constraint(equalTo: trailingAnchor,constant: -95),
+            logoView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 40),
+            logoView.leadingAnchor.constraint(equalTo: leadingAnchor,constant: 110),
+            logoView.trailingAnchor.constraint(equalTo: trailingAnchor,constant: -110),
             logoView.heightAnchor.constraint(equalToConstant: 160),
             
-            toggleButton.topAnchor.constraint(equalTo: logoView.bottomAnchor, constant: 70),
+            toggleButton.topAnchor.constraint(equalTo: logoView.bottomAnchor, constant: 60),
             toggleButton.leadingAnchor.constraint(equalTo: leadingAnchor,constant: 30),
             toggleButton.trailingAnchor.constraint(equalTo: trailingAnchor,constant: -30),
             toggleButton.heightAnchor.constraint(equalToConstant: 40),
